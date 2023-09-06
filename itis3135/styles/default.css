@@ -1,0 +1,68 @@
+body {
+    background-color: #132633
+}
+
+nav {
+    text-align: center;
+    color: darkgrey;
+}
+
+a {
+    display: inline-block;
+    background-color: ivory;
+    padding: 1px 2px;
+    text-decoration: none;
+    color: #132633;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 50px
+}
+
+h2 {
+    color: ivory;
+    text-align: center;
+    font-size: 35px
+}
+
+h3 {
+    color: lightgrey;
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    
+    text-align: center;
+    color: darkgrey;
+}
+
+p {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: grey;
+    color: white;
+}
+
+ul {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: grey;
+    color: white;
+}
+
+figure {
+    text-align: center;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
+    color: ivory;
+}
+
+p.signature {
+    text-align: left;
+}
