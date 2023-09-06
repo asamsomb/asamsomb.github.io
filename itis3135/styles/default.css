@@ -1,30 +1,48 @@
 body {
-    background-color: #132633
+    background-color: lightblue
 }
 
 nav {
+    background-color: lightblue;
+    padding-inline: 3px 3px;
+    margin: 0px;
+    border: 1px dotted whitesmoke;
+    display: block;
+    margin-inline: auto;
+    width: max-content;
     text-align: center;
-    color: darkgrey;
+    color: white;
+}
+
+nav.copyright {
+    border: none;
+    width: auto;
+    color: white;
 }
 
 a {
     display: inline-block;
-    background-color: ivory;
-    padding: 1px 2px;
+    background-color:  lightpink;
+    padding: 2px 6px;
     text-decoration: none;
-    color: #132633;
+    color: white;
+}
+
+a.w3 {
+    background-color: lightblue;
 }
 
 h1 {
     color: white;
     text-align: center;
-    font-size: 50px
+    font-size: 30px;
+    margin: 0, auto;
 }
 
 h2 {
-    color: ivory;
+    color: whitesmoke;
     text-align: center;
-    font-size: 35px
+    font-size: 25px;
 }
 
 h3 {
@@ -33,17 +51,31 @@ h3 {
     font-size: 25px;
 }
 
-p {
-    
-    text-align: center;
-    color: darkgrey;
+a.samsombathsollink {
+    color: whitesmoke;
+    display: inline-block;
+    background-color: lightblue;
 }
 
 p {
+    text-align: left;
     max-width: 70%;
     margin: 0 auto;
-    background-color: grey;
-    color: white;
+    background-color: none;
+    color: whitesmoke;
+}
+
+p.copyright {
+    display: inline-block;
+    color: whitesmoke;
+    background-color: lightblue;
+}
+
+p.content {
+    color: whitesmoke;
+    margin: 0, auto;
+    background-color: lightblue;
+    text-align: center;
 }
 
 ul {
