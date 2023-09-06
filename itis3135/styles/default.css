@@ -4,12 +4,12 @@ body {
 
 nav {
     background-color: lightblue;
-    padding-inline: 3px 3px;
+    padding: 3px 3px;
     margin: 0px;
     border: 1px dotted whitesmoke;
     display: block;
     margin-inline: auto;
-    width: max-content;
+    width: 0, auto;
     text-align: center;
     color: white;
 }
@@ -46,7 +46,7 @@ h2 {
 }
 
 h3 {
-    color: lightgrey;
+    color: whitesmoke;
     text-align: center;
     font-size: 25px;
 }
@@ -79,10 +79,15 @@ p.content {
 }
 
 ul {
-    max-width: 70%;
+    max-width: 80%;
     margin: 0 auto;
-    background-color: grey;
-    color: white;
+    background-color: none;
+    color: whitesmoke;
+    border: 2px dotted lightpink
+}
+
+ul.inner {
+    border: none;
 }
 
 figure {
