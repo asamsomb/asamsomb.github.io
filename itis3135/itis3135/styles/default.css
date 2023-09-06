@@ -55,3 +55,7 @@ figcaption {
     text-align: center;
     color: ivory;
 }
+
+p.signature {
+    text-align: left;
+}
