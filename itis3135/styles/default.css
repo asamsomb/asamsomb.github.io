@@ -103,3 +103,41 @@ figcaption {
 p.signature {
     text-align: left;
 }
+
+tr.col1 {
+    background-color: #9A9A9A;
+    color: blacke;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+td.department {
+    background-color: whitesmoke;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid whitesmoke;
+    width: 0, auto;
+    text-align: left;
+    margin: 0 auto;
+}
+
+ol {
+    margin: 0 auto;
+    padding: 2px, 0, auto;
+}
