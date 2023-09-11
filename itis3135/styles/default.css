@@ -1,5 +1,6 @@
 body {
-    background-color: lightblue
+    background-color: lightblue;
+    margin: 50px
 }
 
 nav {
@@ -8,8 +9,6 @@ nav {
     margin: 0px;
     border: 1px dotted whitesmoke;
     display: block;
-    margin-inline: auto;
-    width: 0, auto;
     text-align: center;
     color: white;
 }
@@ -36,7 +35,7 @@ h1 {
     color: white;
     text-align: center;
     font-size: 30px;
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 h2 {
@@ -73,7 +72,7 @@ p.copyright {
 
 p.content {
     color: whitesmoke;
-    margin: 0, auto;
+    margin: 0 auto;
     background-color: lightblue;
     text-align: center;
 }
@@ -106,7 +105,7 @@ p.signature {
 
 tr.col1 {
     background-color: #9A9A9A;
-    color: blacke;
+    color: black;
 }
 
 tr:nth-child(even) {
@@ -132,12 +131,57 @@ table {
     width: 80%;
     border-collapse: collapse;
     border: 2px solid whitesmoke;
-    width: 0, auto;
+    width: 0 auto;
     text-align: left;
     margin: 0 auto;
 }
 
 ol {
     margin: 0 auto;
-    padding: 2px, 0, auto;
+    padding: 2px 0 auto;
+}
+
+form {
+    max-width: 500px;
+    background-color: lightgray;
+    margin: 0 auto;
+    color: black;
+    font-size: 15px;
+    font-family: Tahoma;
+    padding: 20px
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 2px solid white;
+}
+
+input, select {
+    width: 100%;
+    padding: auto;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+select {
+    width: auto;
+    min-height: 1.4em;
+    border: 1px solid black;
+}
+
+input[type="submit"], input[type="reset"] {
+    margin: 0 auto;
+    width: 100px;
+    height: 2em;
+    font-size: 15px;
+    background-color: grey;
+    color: whitesmoke;
+    min-width: 30px;
+}
+
+input.inline {
+    width: auto;
+    margin-right: auto;
 }
