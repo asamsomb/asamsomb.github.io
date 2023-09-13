@@ -1,13 +1,13 @@
 body {
-    background-color: lightblue;
+    background: #e8c1b2;
     margin: 50px
 }
 
 nav {
-    background-color: lightblue;
+    background: #8a817c;
     padding: 3px 3px;
     margin: 0px;
-    border: 1px dotted whitesmoke;
+    border: 1px solid ;
     display: block;
     text-align: center;
     color: white;
@@ -21,10 +21,9 @@ nav.copyright {
 
 a {
     display: inline-block;
-    background-color:  lightpink;
     padding: 2px 6px;
     text-decoration: none;
-    color: white;
+    color: #f4f3ee;
 }
 
 a.w3 {
@@ -81,8 +80,8 @@ ul {
     max-width: 80%;
     margin: 0 auto;
     background-color: none;
-    color: whitesmoke;
-    border: 2px dotted lightpink
+    color: #463f3a;
+    border: 2px dotted #463f3a;
 }
 
 ul.inner {
