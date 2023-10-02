@@ -1,10 +1,90 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>First Script</title>
-        <script src="scripts/defaultscripts.js"></script>
-    </head>
-    <body>
-        <button onclick="scriptTest()">Script Test</button>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aida Samsombath || ITIS 3135 First Script</title>
+    <script src="../itis3135/scripts/defaultscripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Aida Samsombath's Awkward Salamander &hearts; ITIS 3135</h1>
+        <link rel="stylesheet" href="styles/default.css">
+        <nav>
+            <a href ="./">Homepage</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="tables.html">Tables</a>
+            ||
+            <a href="forms.html">Forms</a>
+            || 
+            <a href="website_evaluations.html">Website Evaluations</a>
+            ||
+            <a href="stuff/thisISlikeAreallyWeirdpage.htm">CRAP Web Page</a>
+            ||
+            <a href="firstscripts.html">First Script</a>
+        </nav>
+    </header>
+    <main>
+        <!-- main -->
+        <h2>First Script</h2>
+        <h3 id="currentDateTime"></h3>
+        <form id="form" action="#" method="post">
+            <div class="user-input">
+                <label id="input-name">Tell me your name.</label>
+                <input id="name" type="text" placeholder=" Ex: Jane Doe" required/>
+            </div>
+            <div class="user-input">
+                <label id="input-feeling">How are you doing today?</label>
+                <input id="feeling" type="text" placeholder=" Ex: Bored" required/>
+            </div>
+            <div class="button-container">
+                <button type="submit" onclick="displayGreeting();">Submit</button>
+            </div>
+        </form>
+        <form id="form" action="#" method="post">
+            <div class="user-input">
+                <label id="input-number">Enter your favorite number between -10 and 10.</label>
+                <input id="number" type="number" placeholder=" Ex: 4" min="-10.0" max="10.0" step="0.1" required/>
+            </div>
+            <div class="button-container">
+                <button type="submit" onclick="displayPolygon();">Submit</button>
+            </div>
+        </form>
+        <form id="form" action="#" method="post">
+            <div class="button-container">
+                <button type="submit-fs" onclick="displaySpiritAnimal();">Find Your Spirit Animal &hearts;</button>
+                <button type="submit-fs" onclick="calculateTip();">Calculate Tip &hearts;</button>
+                <button type="submit-fs" onclick="fahrenheitToCelcius();">Convert Fahrenheit to Celcius &hearts;</button>
+                <button type="submit-fs" onclick="mendHeart();">Mend the Heart &#128148</button>
+                <button type="submit-fs" onclick="areaPerimeterRectangle();">Find Area & Perimeter of a Rectangle &hearts;</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <hr>
+        <nav>
+            <a href="https://webpages.charlotte.edu/asamsomb/">CLT Homepage</a>
+            ||
+            <a href="https://github.com/asamsomb/asamsomb.github.io">GitHub Repository</a>
+            ||
+            <a href="https://github.com/asamsomb/asamsomb.github.io">GitHub.io</a>
+            ||
+            <a href="https://www.freecodecamp.org/asamsomb">freeCodeCamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/asamsomb">Codeacademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/leeaida/">LinkedIn</a>
+        </nav>
+        <hr>
+        <nav>
+            <p class="copyright">Designed by<a class="samsombathsollink" href="https://webpages.charlotte.edu/asamsomb/itis3135/samsombathsol.co/">Samsombath Solutions &hearts;</a>&copy; 2023</p>
+            <a class="w3" href="https://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!"></a>
+            <a class="w3" href="https://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a>
+        </nav>
+    </footer>
+</body>
 </html>
