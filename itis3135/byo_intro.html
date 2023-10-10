@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Aida Samsombath || ITIS 3135 BYO Introduction</title>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <hr>
+        <h2>BYO Introduction</h2>
+        <h3>Build your own introduction page! Tell us a little about yourself to get started!</h3>
+        <form id="introForm" method="post" action="#" onsubmit="return validateForm();">
+            <label for="name">Name</label>
+            <input type="text" id="name" value="Aida Samsombath">
+            <br>
+            <label for="mascot">Create a mascot using the first letters of your first <em>(adjective)</em> and last name <em>(animal)</em>.</label>
+            <input type="text" for="mascot" id="mascot" value="Awkward Salamander">
+            <br>
+            <label for="image">Introduction Image <em>(PNG or JPG files only)</em></label>
+            <input type="file" name="file" id="introImage" accept=".png, .jpg">
+            <br>
+            <label for="image-caption">Caption your image.</label>
+            <input type="text" name="image-caption" id="imageCaption" value="My Australian Shepherd, Mr. Ozz. &hearts;">
+            <br>
+            <label for="personal-background">Tell us a little about your personal background.</label>
+            <textarea type="text" name="personal-background" id="personalBackground">I was born in Milwaukee, Wisconsin, but raised all around the states because my dad was military. In 2020, I moved to NC from SC. In my free time, I enjoy playing with my dogs (a Yorkshire Terrier and an Australian Shepherd) and hitting the trails at Uwharrie.</textarea>
+            <br>
+            <label for="professional-background">Tell us a little about your professional background.</label>
+            <textarea type="text" name="professional-background" id="professionalBackground">Right now, I am working at a business brokerage office as their digital marketing specialist where taking this class is highly beneficial for my position. My professional background over the years consisted of mainly corporate and administrative experiences.</textarea>
+            <br>
+            <label for="academic-background">Tell us a little about your academic background.</label>
+            <textarea type="text" name="academic-background" id="academicBackground">I started college when I was around 20 years old and it took me nearly four years to complete my associates degree due to moving so much. Now, I am a fourth year student here at UNC-Charlotte majoring in Computer Science.</textarea>
+            <br>
+            <label for="web-development-background">Tell us a little about your web development background.</label>
+            <textarea type="text" name="web-development-background" id="webDevelopmentBackground">As mentioned before, I currently work part-time as a digital marketing specialist. I maintain our company’s websites and assist with the selling of businesses.</textarea>
+            <br>
+            <label for="platform">What is your primary computer platform?</label>
+            <input type="text" name="platform" id="platform" value="Windows 11">
+            <br>
+            <label for="courses" id="courses">What courses are your currently enrolled in? Add as many as you'd like!</label>
+            <br>
+            <div id="courses-container">
+                <!-- added courses -->
+            </div>
+            <button type="button" onclick="addCourse()">Add a Course</button>
+            <br>
+            <br>
+            <label for="funny-thing">What is something funny you'd like to tell us?</label>
+            <textarea type="textarea" name="funny-thing" id="funnyThing">When I was younger, my dad used to tell me stories about a boy named “Jacob” who lived in the toilet. This always scared me as a child. I wonder where Jacob is now…</textarea>
+            <br>
+            <label for="additional-info">Is there anything else you'd like to include?</label>
+            <input type="text" name="additional-info" id="additionalInfo" value="One more thing...">
+            <div class="checkbox-label" for="acknowledge-terms-conditions">
+                <input type="checkbox" name="acknowledge-terms-conditions" id="acknowledgeTermsConditions">
+                I understand that what is on this page is not password protected and I will not put anything here that I
+                do not want publicly available.
+            </div>
+            <br>
+            <div class="byo-btn-container">
+                <input onclick="return validateForm();" id="submit" type="submit" value="SUBMIT">
+                <button type="reset" onclick="resetForm()">RESET FORM</button>
+            </div>
+        </form>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js"></script>
+</body>
+</html>
