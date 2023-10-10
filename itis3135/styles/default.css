@@ -100,7 +100,7 @@ ul.content-outer, ul.content-web-eval {
 /* End Introduction Content */
 
 /* Start Contract Content */
-p.content-contract, p.content-web-eval {
+p.content-contract, p.content-web-eval, p {
     color: #b2967d;
     margin: 20px auto;
     padding: 10px;
@@ -285,6 +285,11 @@ button[type="reset"] {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: none;
     border-radius: 4px;
+}
+
+/* Client Project */
+h3.project-h3 {
+    text-align: left;
 }
 
 /* Start Footer */
