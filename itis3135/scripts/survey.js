@@ -65,9 +65,10 @@ function addCourse() {
 
 document.getElementById("addCourse").addEventListener("click", addCourse);
 
-let count = 0;
+
 
 function displayCourses() {
+    let count = 0;
     const courseListElement = document.createElement("ul");
     const courseContainer = document.getElementById("courses-container");
 
@@ -79,10 +80,11 @@ function displayCourses() {
             updatedCourse.innerText = child.value;
             courseListElement.appendChild(updatedCourse);
         }
+        count++;
     }
 
     return courseListElement;
-    count++;
+    
 }
 
 const defaultForm = document.getElementById("introForm").innerHTML;
