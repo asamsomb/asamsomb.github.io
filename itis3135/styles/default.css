@@ -86,7 +86,7 @@ figcaption {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-ul.content-outer, ul.content-web-eval {
+ul.content-outer, ul.content-web-eval, ul {
     color: #b2967d;
     margin: 20px auto;
     padding-top: 20px;
@@ -96,6 +96,10 @@ ul.content-outer, ul.content-web-eval {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 20px;
     border: 4px #e6beae dotted;
+}
+
+ul.content-inner {
+    border: none;
 }
 /* End Introduction Content */
 
