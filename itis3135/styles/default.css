@@ -333,6 +333,39 @@ h3.project-h3 {
     text-align: left;
 }
 
+/* Calculator */
+.calculator {
+    border: 1px solid black;
+    width: 400px;
+    background: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 15px 5px 0 5px;
+}
+
+input[type="num-button"] {
+    text-align: center;
+    width: 70px;
+    background: grey;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="clear-button"], input[type="equal-button"] {
+    text-align: center;
+    width: 70px;
+    background: lightpink;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 280px;
+    background: lightgrey;
+    border: 1px solid black;
+}
+
+
 /* Start Footer */
 a.samsombathsollink {
     color: #b2967d;
