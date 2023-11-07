@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Aida Samsombath || ITIS 3135 Arrays</title>
+</head>
+<body>
+    <!--header component-->
+    <div data-include="components/header.html"></div>
+    <!--main component-->
+    <main>
+        <hr>
+        <h2>Arrays</h2>
+        <div>
+            <h3>Input Employee Data</h3>
+            <label for="name">Enter Employee Name:</label>
+            <input id="name" type="text" placeholder="Jane Doe" required>
+            <label for="salary">Enter Employee Salary:</label>
+            <input id="salary" type="number" placeholder="30000" required>
+            <input type="button" id="addSalary" value="Add Employee Data to Array">
+        </div>
+        <div>
+            <h3>Average Salary & Highest Salary</h3>
+            <input type="button" id="displayResults" value="Display Results">
+            <div id="results">
+                <p id="average"></p>
+                <p id="highest"></p>
+                <!-- JavaScript Function Shows Here -->
+            </div>
+        </div>
+        <div>
+            <h3>Results Table</h3>
+            <input type="button" id="displaySalary" value="Display Salary">
+            <table id="results_table">
+                <!-- JavaScript Function Shows Here -->
+            </table>
+        </div>
+        <br>
+        <div class="dropdown">
+            <label for="employees">Select an Employee by Name:</label>
+            <div id="dropdown_select"></div>
+        </div>
+    </main>
+    <!--footer component-->
+    <div data-include="components/footer.html"></div>
+    <!--javascript-->
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/arrays.js"></script>
+</body>
+</html>

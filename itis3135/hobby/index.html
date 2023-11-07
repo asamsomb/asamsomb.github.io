@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aida Samsombath || ITIS 3135 Midterm</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat+Alternates:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+
+        main section {
+            display: none;
+        } 
+
+        html {
+            background: #000000;
+        }
+
+        header, footer, main {
+            background: whitesmoke;
+            text-align: center;
+            border-radius: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a, nav {
+            font-family: 'Libre Franklin';
+            text-decoration: none;
+            color: #677c70;
+            font-size: 20px;
+        }
+
+        a.usda-gov {
+            font-family: none;
+            color:#000000;
+            font-size: 16px;
+        }
+
+        a:hover {
+            font-weight: bold;
+            color: rgb(4, 0, 230);
+        }
+
+        h1 {
+            font-family: 'Jost';
+            font-weight: bolder;
+            font-size: 50px;
+        }
+
+        img {
+            border: #2e2e2e;
+        }
+
+        h2 {
+            font-family: 'Space Grotesk';
+            font-size: 40px;
+        }
+
+        p {
+            font-family: 'Jost';
+            font-size: 19px;
+            margin: 0 auto;
+            padding: 5px 200px;
+            text-align: left;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 20px 300px;
+            text-align: left;
+            font-family: 'Jost';
+            font-size: 19px;
+            margin: 0 auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+            margin: 0 auto;
+            padding-bottom: 5px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+            font-size: 20px;
+            font-family: 'Jost';
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+        #home {
+            display: block;
+        }
+
+        .vertical-img {
+            height: 500px;
+            border: 1px solid #271e1e;
+        }
+
+        .horizontal-img {
+            width: 500px;
+        }
+
+        [data-component="slideshow"] .slide {
+            display: none;
+        }
+
+        [data-component="slideshow"] .slide.active {
+            display: block;
+        }
+
+        [data-component="slideshow"] .slide img {
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ITIS 3135 - Midterm</h1>
+        <nav>
+            <a href="../index.html" class="ignore-link">ITIS 3135 Home Page</a>
+            ||
+            <a href="#home">Midterm Home</a>
+            ||
+            <a href="#about-me">About Me</a>
+            ||
+            <a href="#best-season">Best Season</a>
+            ||
+            <a href="#places">Places</a>
+            ||
+            <a href="#preparation">Preparation</a>
+            ||
+            <a href="#why">Why Do It?</a>
+        </nav>
+    </header>
+    <main>
+        <section class="about-me" id="about-me">
+            <h2>About Me</h2>
+            <figure>
+                <img class="vertical-img" src="images/marine-corps-ball-2019.JPG" alt="eric-and-i-marine-corps-ball-2019">
+                <figcaption><em>My husband and I at the 2019 Marine Corps Ball in Beaufort, South Carolina.</em></figcaption>
+            </figure>
+            <p>Hi, everyone! I'm Aida, I'm excited to share a little about myself and one of my favorite hobbies.</p>
+            <p>A little about me...</p>
+            <ul>
+                <li><strong>Family:</strong> I have two dogs and a husband. As you can imagine, the house is very much lively!</li>
+                <li><strong>Hobbies:</strong> I enjoy photography which I feel goes hand-in-hand with traveling. I imagine that if I were ever to have kids, I'll be the mom who takes pictures of them every moment I can get.</li>
+                <li><strong>Dislikes:</strong> I dislike needles. One of the reasons I decided to pursue a computer science degree is because I could never be what my parents wanted to be (a nurse or a doctor).</li>
+            </ul>
+        </section>
+        <section class="home" id="home">
+            <h2>Home</h2>
+            <figure>
+                <div id="slideshow" data-component="slideshow">
+                    <div role="list">
+                        <div class="slide">
+                            <img src="images/tacoma-washington-2015.JPG" alt="tacoma-washington-snow">
+                        </div>
+                        <div class="slide">
+                            <img src="images/wild-horses-monument.JPG" alt="wild-horses-monument">
+                        </div>
+                        <div class="slide">
+                            <img src="images/minnehaha-falls.JPG" alt="minnehaha-falls">
+                        </div>
+                        <div class="slide">
+                            <img src="images/washington.jpg" alt="washington">
+                        </div>
+                        <div class="slide">
+                            <img src="images/mr-ozz-and-me-chimney-rock.jpeg" alt="mr-ozz-and-me-chimney-rock">
+                        </div>
+                    </div>
+                </div>
+                <figcaption><em>A slideshow of images I've capture during my trips.</em></figcaption>
+            </figure>
+            <p>
+                I love to travel the eastern United State's beautiful landscapes. 
+                Growing up, I had the privilege of moving around frequently due to my family's military background.
+                This allowed me to see and experience the breathtaking scenery of each state's diveristy, creating 
+                memories that I've captured through images. To continue this adventure, my husband and I try to travel as 
+                much as we can together! As pictured, some of the places we've been to are Chimney Rock, NC, Tacoma, WA, and Minnehaha Falls, MN. 
+            </p>
+            <br>
+            <p>
+                Being able to explore new things is great for the mind. I mean, seriously! We only live once, right!? So let's do it!
+            </p>
+        </section>
+        <section class="best-season" id="best-season">
+            <h2>Best Season to Go</h2>
+            <figure>
+                <img class="horizontal-img" src="images/The Best Season to Go.jpg" alt="best-season-img">
+                <figcaption></figcaption>
+            </figure>
+            <p>Depending on where you decide to go, the seasons matter! Below is a table of seasons and places that will give you the best experience for your trips!</p>
+            <br>
+            <table>
+                <tr>
+                    <th>Places</th>
+                    <th>Best Season</th>
+                    <th>Why</th>
+                </tr>
+                <tr>
+                    <td>Chimney Rock, NC</td>
+                    <td>Late Fall</td>
+                    <td>The crispy and cold fall air during this time allows the air to become dense. This forms fog and moist air giving you a cloud-like experience at the top of Chimney Rock!</td>
+                </tr>
+                <tr>
+                    <td>Tacoma, WA</td>
+                    <td>Late Winter to Early Spring</td>
+                    <td>Moving more towards early spring, if you deicde to go to Washington state during this season, you'll be able to experience at least two different seasons! The drive will look like spring, but once you get to the mountains, it immediately becomes winter again.</td>
+                </tr>
+                <tr>
+                    <td>Oak Island, NC</td>
+                    <td>Early Fall</td>
+                    <td>As many of you many know, early fall in the southeastern United States is hurricane season. While it is so, this is definitely the best time of year to go to the beach. It's not too hot and not too cold!</td>
+                </tr>
+            </table>
+            <br>
+        </section>
+        <section class="places" id="places">
+            <h2>Places to Go</h2>
+            <figure>
+                <img class="vertical-img" src="images/stelprdb5403942.png" alt="uwharrie-national-forrest-map">
+                <figcaption><em>Uwharrie NF Map from <a class="usda-gov" href="https://www.fs.usda.gov/detail/nfsnc/maps-pubs/?cid=stelprdb5193039">fs.usda.gov</a></em></figcaption>
+            </figure>
+            <p>If you enjoy the thrill of going off-road while traveling, two of the best places to visit is Uwharrie National Forrest and Old NC-105 in North Carolina.
+                These trails are one of the most adventurous trails I've ever been to. You get to challenge your 4x4 vehicle to the ultimate test!
+            </p>
+            <figure>
+                <img class="vertical-img" src="images/georgia-small-dirt-road.jpg" alt="georgia-small-dirt-road">
+                <figcaption><em>My Toyota 4Runner on a small dirt trail in Georgia.</em></figcaption>
+            </figure>
+            <p>If you are a beginner to going off-road, two of the easiest trails in Uwharrie are the Woodrun Trail and Wolf Den. Try these trails out and see if off-roading is a fit for you!</p>
+        </section>
+        <section class="preparation" id="preparation">
+            <h2>Preparing for the Trip</h2>
+            <figure>
+                <img class="horizontal-img" src="images/carolina-beach-2021.jpg" alt="carolina-beach-2021">
+                <figcaption><em>Carolina Beach Trip 2021 - Carolina Beach, NC</em></figcaption>
+            </figure>
+            <p>When planning for a trip, it is important to pack the essentials as well as plan for unexpected emergencies!
+                Here are some things you may want to consider:
+            </p>
+            <ul>
+                <li><strong>Gas:</strong> Tracking the mileage before hand is important. It allows you to calculate how much gas you may need and where you'll need to stop!</li>
+                <li><strong>Snack:</strong> Packing enough snacks for the trip is a must! Especially coffee and water!</li>
+                <li><strong>Tools & Gear:</strong> These are important to have anywhere! New cars can also break down. If you've got a handy person with you and some tools, you'll be back on the road in no time!</li>
+                <li><strong>Passengers:</strong> There is no great trip without those you spend it with!</li>
+            </ul>
+        </section>
+        <section class="why" id="why">
+            <h2>Why do we do it? Why do we recommend it?</h2>
+            <figure>
+                <img class="horizontal-img" src="images/wild-horses-monument.JPG" alt="wild-horses-monument">
+                <figure><em>Wild Horses Monument - Washington State</em></figure>
+            </figure>
+            <p>Life is short and more often than we believe, we spend our lives in our homes more than we do exploring.
+                My husband and I may not be the wealthiest people in the world, but we do try to make time to explore.
+            </p>
+            <p>I hope that by you exploring this website, you'll become inspired to explore the world itself.
+                Remember, always take photos and document each trip! Nothing is better than what's to come! &hearts;
+            </p>
+        </section>
+    </main>
+    <br>
+    <br>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/asamsomb/">CLT Homepage</a>
+            ||
+            <a href="https://github.com/asamsomb/asamsomb.github.io">GitHub Repository</a>
+            ||
+            <a href="https://asamsomb.github.io/itis3135/">GitHub.io</a>
+            ||
+            <a href="https://www.freecodecamp.org/asamsomb">freeCodeCamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/asamsomb">Codeacademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/leeaida/">LinkedIn</a>
+        </nav>
+        <br>
+        <nav class="copyright">
+            <p class="copyright">Designed by <a class="samsombathsollink" href="https://webpages.charlotte.edu/asamsomb/itis3135/samsombathsol.co/">Samsombath Solutions &hearts;</a> &copy; 2023</p>
+            <a class="w3" href="https://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!"></a>
+            <a class="w3" href="https://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"></a>
+        </nav>
+    </footer>
+    <br>
+    <script>
+        const navLinks = document.querySelectorAll('nav a');
+        const sections = document.querySelectorAll('main section');
+        
+        navLinks.forEach((link) => {
+            if (!link.classList.contains('ignore-link')) {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const targetId = link.getAttribute('href').replace('#', '');
+                    sections.forEach((section) => {
+                        section.style.display = section.id === targetId ? 'block' : 'none';
+                    });
+                });
+            }
+        }); 
+
+        var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+        slideshows.forEach(initSlideShow);
+
+        function initSlideShow(slideshow) {
+
+            var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+            var index = 0, time = 5000;
+            slides[index].classList.add('active');
+
+            setInterval( () => {
+                slides[index].classList.remove('active');
+                
+                index++;
+                if (index === slides.length) index = 0;
+
+                slides[index].classList.add('active');
+
+            }, time);
+        }
+    </script>
+</body>
+</html>
