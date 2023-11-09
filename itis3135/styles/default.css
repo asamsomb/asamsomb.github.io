@@ -367,7 +367,7 @@ input[type="text"] {
 
 
 /* Start Footer */
-a.samsombathsollink {
+a.samsombathsollink, a.cert-links {
     color: #b2967d;
     display: inline-block;
     font-weight: bold;
