@@ -1,16 +1,15 @@
-let person = [];
-let salaries = [];
+let person = ["Brad Litt", "Angelina Grolie", "Taylor Swith"];
+let salaries = [100600, 500000, 2000000];
 
 document.addEventListener("DOMContentLoaded", function () {
     var nameInput = document.getElementById("name");
     var salaryInput = document.getElementById("salary");
     var addSalaryBtn = document.getElementById("addSalary");
-    var displayResults = document.getElementById("results");
-    var averageResult = document.getElementById("average");
-    var highestResult = document.getElementById("highest");
+    var result = document.getElementById("average");
     var tableResult = document.getElementById("results_table");
     var displaySalaryBtn = document.getElementById("displaySalary");
     var displayResultsBtn = document.getElementById("displayResults");
+    var option = document.getElementById("employee_select");
 
     function addSalary() {
         var name = nameInput.value;
@@ -25,27 +24,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
             nameInput.value = "";
             salaryInput.value = "";
-
         } else {
-            alert("ERROR: Please review Employee Name and Salary!");
-        }
-    }
-
-    function calculateAverage() {
-        if (salaries.length === 0) {
-            return 0;
+            alert("ERROR: Employee Name and Salary cannot be empty!");
         }
 
-        var sum = salaries.reduce((acc, val) => acc + val, 0);
-        return sum / salaries.length;
+        nameInput.focus();
     }
 
     function displayResults() {
-        var average = calculateAverage();
-        var highest = Math.max(...salaries);
+        var average = 0;
+        var highest = 0;
 
-        averageResult.innerHTML = `Average Salary: $${average.toFixed(2)}`;
-        highestResult.innerHTML = `Highest Salary: $${highest.toFixed(2)}`;
+        for (var i = 0; i < salaries.length; i++) {
+            average += salaries[i];
+
+            if (salaries[i] > highest) {
+                highest = salaries[i];
+            }
+        }
+
+        if (salaries.length != 0) {
+            average = average / salaries.length;
+        }
+
+        result.innerHTML = "<p><strong> Average Salary: $" + average + "</strong></p>";
+        result.innerHTML += "<p><strong> Highest Salary: $" + highest + "</strong></p>";
     }
 
     function displaySalary() {
@@ -61,8 +64,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    function displaySelection() {
+        option.innerHTML = "";
+    
+        for (var i = 0; i < person.length; i++) {
+            var newOption = document.createElement("option");
+            newOption.value = i;
+            newOption.text = person[i];
+            option.appendChild(newOption);
+        }
+    }
+
     displaySalaryBtn.addEventListener("click", displaySalary);
     addSalaryBtn.addEventListener("click", addSalary);
     displayResultsBtn.addEventListener("click", displayResults);
-    nameInput.focus();
+    option.addEventListener("click", displaySelection);
 });

@@ -365,6 +365,16 @@ input[type="text"] {
     border: 1px solid black;
 }
 
+/* Arrays */
+label[for="name"], label[for="salary"] {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input.array-name {
+    background: white;
+    width: 100%;
+    border: 1px solid #b2967d;
+}
 
 /* Start Footer */
 a.samsombathsollink, a.cert-links {

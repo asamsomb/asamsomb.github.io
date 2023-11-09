@@ -7,16 +7,14 @@
     <title>Aida Samsombath || ITIS 3135 Arrays</title>
 </head>
 <body>
-    <!--header component-->
     <div data-include="components/header.html"></div>
-    <!--main component-->
     <main>
         <hr>
         <h2>Arrays</h2>
         <div>
             <h3>Input Employee Data</h3>
             <label for="name">Enter Employee Name:</label>
-            <input id="name" type="text" placeholder="Jane Doe" required>
+            <input class="array-name" id="name" type="text" placeholder="Jane Doe" required>
             <label for="salary">Enter Employee Salary:</label>
             <input id="salary" type="number" placeholder="30000" required>
             <input type="button" id="addSalary" value="Add Employee Data to Array">
@@ -25,8 +23,8 @@
             <h3>Average Salary & Highest Salary</h3>
             <input type="button" id="displayResults" value="Display Results">
             <div id="results">
-                <p id="average"></p>
-                <p id="highest"></p>
+                <div id="average"></div>
+                <div id="highest"></div>
                 <!-- JavaScript Function Shows Here -->
             </div>
         </div>
@@ -39,13 +37,12 @@
         </div>
         <br>
         <div class="dropdown">
-            <label for="employees">Select an Employee by Name:</label>
-            <div id="dropdown_select"></div>
+            <h3>Select an Employee by Name:</h3>
+            <input type="button" id="displaySelection" value="Select Employee">
+            <select id="employee_select"></select>
         </div>
     </main>
-    <!--footer component-->
     <div data-include="components/footer.html"></div>
-    <!--javascript-->
     <script src="scripts/HTMLInclude.min.js"></script>
     <script src="scripts/arrays.js"></script>
 </body>
