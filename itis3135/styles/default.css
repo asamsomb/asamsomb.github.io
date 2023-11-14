@@ -376,6 +376,12 @@ input.array-name {
     border: 1px solid #b2967d;
 }
 
+/* Interactive Drawing */
+canvas {
+    border: 2px solid black;
+    background: #e6beae;
+}
+
 /* Start Footer */
 a.samsombathsollink, a.cert-links {
     color: #b2967d;
