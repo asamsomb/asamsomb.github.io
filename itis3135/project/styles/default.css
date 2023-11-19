@@ -137,14 +137,11 @@ img.service-image {
 }
 
 figure {
-    figure.services-location-image {
-        padding-top: !important;
-    }
     padding-top: 1300px;
 }
 
 figure.services-location-image {
-    padding-bottom: 25px;
+    padding: 5px 0px;
 }
 
 figcaption {
