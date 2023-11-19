@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/pexels-nicolas-petremann-3121030.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.4; 
+    background-attachment: fixed;
+}
+
+body {
+    margin: 0;
+    opacity: 0.9;
+    background-color: #333333;
+}
+
+img.services-location-image {
+    height: 775px;
+    border: 1px solid;
+}
+
+#heading {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 10px 100px;
+    color: #2A2D34;
+    width: 1000px;
+    border-radius: 15px;
+}
+
+.form-container {
+    padding: 15px 20px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 900px;
+}
+
+h1 {
+    font-family: 'Red Hat Text';
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"],
+select {
+    font-family: 'Red Hat Text';
+    width: 400px;
+    font-size: 15px;
+    background: whitesmoke;
+    color: #727272;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+p.verified-submission {
+    margin: 0 auto;
+    text-align: center;
+}
+
+textarea {
+    font-family: 'Red Hat Text';
+    width: 840px;
+    font-size: 15px;
+    background: whitesmoke;
+    color: #727272;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    display: inline-block;
+    margin: 0 20px;
+    font-family: 'Red Hat Text';
+    font-size: 17px;
+}
+
+.service-inquiry-container,
+#select-service-form,
+textarea {
+    text-align: left;
+    padding-left: 15px;
+}
+
+input.aircraft-type {
+    width: 840px;
+}
+
+.select-service-form {
+    border: 1px solid;
+}
+
+.select-service-form {
+    display: none;
+}
+
+#home-image {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img.eric-jet {
+    display: block;
+    margin: 0 auto;
+    height: 900px;
+    border: 1px solid grey;
+}
+
+.bottom-space {
+    padding-top: 150px;
+}
+
+img.service-image {
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    border: 1px solid grey;
+}
+
+figure {
+    figure.services-location-image {
+        padding-top: !important;
+    }
+    padding-top: 1300px;
+}
+
+figure.services-location-image {
+    padding-bottom: 25px;
+}
+
+figcaption {
+    font-family: 'Maven Pro';
+    font-style: italic;
+    color: #333;
+    margin: 10px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 675px;
+    border-radius: 3px;
+}
+
+.services-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 260px;
+}
+
+.service-container {
+    display: flex;
+    width: 100%;
+    max-width: 3000px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    position: inherit;
+    padding-top: 20px;
+}
+
+.services-spacer {
+    padding-top: 1300px;
+}
+
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .service-container h2,
+    .service-container p {
+        max-width: 100%;
+    }
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #090909;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar a.navbar {
+    display: block;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: whitesmoke;
+    color: #000000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    left: auto;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+  
+.dropdown-content a:hover {
+    background-color: whitesmoke;
+    display: block;
+}
+  
+.show {
+    display: block;
+}
+
+#menu-image {
+    height: 30px;
+}
+
+#mach-atlus-logo {
+    height: 60px;
+    float: left;
+    font-size: 23px;
+}
+
+h2, h3, p {
+    font-family: 'Maven Pro';
+}
+
+h2 {
+    font-size: 40px;
+    padding: 0px 150px;
+    text-align: left;
+}
+
+h3 {
+    font-size: 30px;
+    display: block;
+}
+
+p {
+    font-size: 25px;
+    padding: 0px 150px;
+}
+
+p.services, h2.services {
+    padding: 0px;
+    max-width: 25%;
+    margin: 0 auto;
+}
+
+h3.services {
+    text-align: center;
+}
+
+.content-container {
+    text-align: left;
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0px 25px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+}
+
+.schedule-service-container {
+    text-align: center;
+} 
+
+button {
+    background: whitesmoke;
+    color: black;
+    border: 1px solid;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.button-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+button:hover {
+    background: grey;
+    color: white;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #090909;
+    padding: 10px 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #090909;
+    padding: 10px 0;
+}
+
+p.footer {
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: whitesmoke
+}
+
+.designed-by-link {
+    text-decoration: none;
+    color: whitesmoke;
+}
