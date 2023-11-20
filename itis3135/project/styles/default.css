@@ -72,7 +72,7 @@ p.verified-submission {
 
 textarea {
     font-family: 'Red Hat Text';
-    width: 840px;
+    width: 810px;
     font-size: 15px;
     background: whitesmoke;
     color: #727272;
@@ -101,7 +101,7 @@ textarea {
 }
 
 input.aircraft-type {
-    width: 840px;
+    width: 800px;
 }
 
 .select-service-form {
@@ -362,7 +362,7 @@ button:hover {
 
 img.slide-image {
     padding-top: 20px;
-  width: 58%;
+    width: 55%;
 }
 
 .fade {
@@ -410,6 +410,10 @@ a.samsombathsollink, a.cert-links {
     text-decoration: none;
     font-weight: bold;
     color: white
+}
+
+a.samsombathsollink:hover, a.cert-links:hover {
+    color: blue;
 }
 
 a.w3:hover {
