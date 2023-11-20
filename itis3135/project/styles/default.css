@@ -202,6 +202,13 @@ figcaption {
     transform: translate(-50%, -50%);
 }
 
+.gallery-centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .navbar {
     overflow: hidden;
     background-color: #090909;
@@ -341,6 +348,49 @@ button:hover {
     color: white;
 }
 
+/* slideshow */
+* {
+    box-sizing: border-box
+}
+
+.image-slideshow {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top: 600px;
+}
+
+img.slide-image {
+    padding-top: 20px;
+  width: 58%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+.slideshow-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.gallery-spacer {
+    padding-top: 350px;
+}
+
+figcaption.slideshow-caption {
+    font-weight: bold;
+    background: none;
+    padding-bottom: 12px;
+    font-size: 20px;
+}
+
 /* footer */
 footer {
     position: fixed;
@@ -355,7 +405,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 4;
     background-color: #090909;
     padding: 10px 0;
 }
