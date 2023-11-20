@@ -382,6 +382,35 @@ canvas {
     background: #e6beae;
 }
 
+/* Review 1 */
+.spacer {
+    padding-top: 10px;
+}
+.content-checklist {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+p.review-checklist, ol.review-checklist, ul.review-checklist {
+    background: none;
+    border: none;
+    font-size: 20px;
+    padding: 0px 0px;
+    margin: 0 auto;
+}
+
+ul.review-checklist {
+    padding: 0px 30px;
+}
+
+.checkmark {
+    color: green;
+}
+
+.x-mark {
+    color: red;
+}
+
 /* Start Footer */
 a.samsombathsollink, a.cert-links {
     color: #b2967d;
