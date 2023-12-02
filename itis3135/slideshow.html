@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/default.css">
+    <title>Aida Samsombath || ITIS 3135 Homepage</title>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <hr>
+        <h2>Slideshow</h2>
+        <div class="slideshow-container">
+            <!-- images for slideshow -->
+            <div class="my-slides">
+                <div class="number-text">1 / 14</div>
+                <img src="images/a-aroma.png" alt="a-aroma" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">2 / 14</div>
+                <img src="images/i-ibuprofen.png" alt="i-ibuprofen" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">3 / 14</div>
+                <img src="images/d-doctors-appointment.png" alt="d-doctors-appointment" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">4 / 14</div>
+                <img src="images/a-animal-crossing.png" alt="a-animal-crossing" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">5 / 14</div>
+                <img src="images/s-sanrio-characters.png" alt="s-sanrio-characters" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">6 / 14</div>
+                <img src="images/a-apple-iphone.png" alt="a-apple-iphone" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">7 / 14</div>
+                <img src="images/m-mouse.png" alt="m-mouse" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">8 / 14</div>
+                <img src="images/s-stapler.png" alt="s-stapler" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">9 / 14</div>
+                <img src="images/o-the-ordinary.png" alt="o-the-ordinary" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">10 / 14</div>
+                <img src="images/m-mindful-memos.png" alt="m-mindful-memos" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">11 / 14</div>
+                <img src="images/b-boba.png" alt="b-boba" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">12 / 14</div>
+                <img src="images/a-allergy-medicine.png" alt="a-allergy-medicine" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">13 / 14</div>
+                <img src="images/t-toilet-paper.png" alt="t-toilet-paper" class="slide-image">
+            </div>
+            <div class="my-slides">
+                <div class="number-text">14 / 14</div>
+                <img src="images/h-hello-kitty.jpeg" alt="h-hello-kitty" class="slide-image">
+            </div>
+            <!-- buttons for previous & next -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!-- captions for images -->
+            <div class="caption-container">
+                <p class="caption" id="caption"></p>
+            </div>
+            <!-- thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/a-aroma.png" onclick="currentSlide(1)" alt="A - Aroma">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/i-ibuprofen.png" onclick="currentSlide(2)" alt="I - Ibuprofen">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/d-doctors-appointment.png" onclick="currentSlide(3)" alt="D - Doctor's Appointment">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/a-animal-crossing.png" onclick="currentSlide(4)" alt="A - Animal Crossing">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/s-sanrio-characters.png" onclick="currentSlide(5)" alt="S - Sanrio Chracters">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/a-apple-iphone.png" onclick="currentSlide(6)" alt="A - Apple iPhone">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/m-mouse.png" onclick="currentSlide(7)" alt="M - Mouse">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/s-stapler.png" onclick="currentSlide(8)" alt="S - Stapler">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/o-the-ordinary.png" onclick="currentSlide(9)" alt="O - Ordinary Skin Care">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/m-mindful-memos.png" onclick="currentSlide(10)" alt="M - Mindful Memos">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/b-boba.png" onclick="currentSlide(11)" alt="B - Boba Stuffy">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/a-allergy-medicine.png" onclick="currentSlide(12)" alt="A - Allergy Medicine">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/t-toilet-paper.png" onclick="currentSlide(13)" alt="T - Toilet Paper">
+                </div>
+                <div class="column">
+                    <img class="demo cursor slide-thumbnail" src="images/h-hello-kitty.jpeg" onclick="currentSlide(14)" alt="H - Hello Kitty">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html>
