@@ -433,10 +433,6 @@ p.copyright {
 }
 /* End Footer */
 
-* {
-    box-sizing: border-box;
-}
-
 .slideshow-container {
     position: relative;
     text-align: center;
@@ -456,29 +452,22 @@ p.copyright {
     cursor: pointer;
     position: absolute;
     top: 35%;
-    width: auto;
     padding: 16px;
     margin-top: -50px;
     color: #000000;
     font-weight: bold;
     font-size: 30px;
-    border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
 }
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
 .prev {
     left: 0;
     border-radius: 3px 0 0 3px;
-}
-
-.slide-thumbnail {
-    width: 100%;
 }
 
 .prev:hover,
@@ -520,11 +509,11 @@ p.caption {
 
 .column {
     float: left;
-    width: 16.66%;
+    width: 18%;
 }
 
 .demo {
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
 .active, .demo-hover {
