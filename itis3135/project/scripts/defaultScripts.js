@@ -1,4 +1,5 @@
 // dropdown menu is hidden when user clicks outside of menu button
+// shows if clicked
 window.onclick = function(e) {
     if (!e.target.matches('.dropbtn')) {
     var myDropdown = document.getElementById("myDropdown");
