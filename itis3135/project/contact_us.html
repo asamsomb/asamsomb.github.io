@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/default.css">
         <script src="scripts/defaultScripts.js"></script>
@@ -23,7 +24,7 @@
                         <input type="text" id="phone-number" pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" oninput="formatPhoneNumber(this)" placeholder="(000) 000-0000" required>
                         <br><br>
                         <div class="service-inquiry-container">
-                            <label for="service-inquiry">Is this inquiry for a service?</label>
+                            <label for="yes">Is this inquiry for a service?</label>
                             <label for="yes">YES</label>
                             <input type="radio" id="yes" name="options" onclick="showSelectServiceForm()">
                             <label for="no">NO</label>

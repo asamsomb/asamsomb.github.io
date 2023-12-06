@@ -1,3 +1,4 @@
+// dropdown menu is hidden when user clicks outside of menu button
 window.onclick = function(e) {
     if (!e.target.matches('.dropbtn')) {
     var myDropdown = document.getElementById("myDropdown");
@@ -7,18 +8,22 @@ window.onclick = function(e) {
     }
 }
 
+// displays menu items
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
+// redirects to contact us page
 function redirectContactUs() {
   window.location.href = 'contact_us.html';
 }
 
+// redirects to home page
 function redirectHome() {
   window.location.href = 'index.html';
 }
 
+// Takes phone number input of length 10 --> 1234567890 and formats it to (123) 456-7890
 function formatPhoneNumber(input) {
   var phoneNumber = input.value.replace(/\D/g, '');
 
@@ -32,16 +37,19 @@ document.addEventListener("DOMContentLoaded", function() {
   hideSelectServiceForm();
 });
 
+// If user selects "Yes" for "Is this a service inqury?", services dropdown shows.
 function showSelectServiceForm() {
   var selectServiceForm = document.getElementById("select-service-form");
   selectServiceForm.style.display = "block";
 }
 
+// If user selects "No" for "Is this a service inqury?", services dropdown stays hidden.
 function hideSelectServiceForm() {
   var selectServiceForm = document.getElementById("select-service-form");
   selectServiceForm.style.display = "none";
 }
 
+// Validates form and gives alerts to users for required fields.
 function validateForm() {
   var firstName = document.getElementById("first-name").value;
   var lastName = document.getElementById("last-name").value;
@@ -79,11 +87,13 @@ function validateForm() {
 
 var defaultForm = document.getElementById("contactForm").innerHTML;
 
+// Submits the form and displays 'thank you' message to confirm form validation and submission
 function submitForm() {
   if (validateForm()) {
     var firstName = document.getElementById("first-name").value;
     var lastName = document.getElementById("last-name").value;
 
+    // creates div element with innerHTML content
     var verifiedSubmission = document.createElement('div');
 
     verifiedSubmission.innerHTML = `

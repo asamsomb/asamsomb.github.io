@@ -29,7 +29,7 @@ img.services-location-image {
     border: 1px solid;
 }
 
-#heading {
+#heading, .heading-content {
     background-color: rgba(255, 255, 255, 0.5);
     text-align: center;
     padding: 10px 100px;
@@ -227,11 +227,21 @@ figcaption {
 .dropdown {
     float: right;
     overflow: hidden;
-}
-
-.dropdown .dropbtn {
     cursor: pointer;
     font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropbtn  {
+    cursor: pointer;
+    font-size: 20px;  
+    font-weight: bold;
     border: none;
     outline: none;
     color: white;
@@ -398,7 +408,7 @@ footer {
     width: 100%;
     z-index: 3;
     background-color: #090909;
-    padding: 10px 0;
+    padding: 7px 0px;
     text-align: center;
 }
 
@@ -432,4 +442,8 @@ header {
 .designed-by-link {
     text-decoration: none;
     color: whitesmoke;
+}
+
+p.copyright {
+    font-size: 15px;
 }
